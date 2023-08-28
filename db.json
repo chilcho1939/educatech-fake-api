@@ -1,64 +1,187 @@
 {
-  "peliculas": [
-    {
-      "id": 1,
-      "nombre": "El sexto sentido",
-      "director": "M. Night Shyamalan",
-      "clasificacion": "Drama"
-    },
-    {
-      "id": 2,
-      "nombre": "Pulp Fiction",
-      "director": "Tarantino",
-      "clasificacion": "Acción"
-    },
-    {
-      "id": 3,
-      "nombre": "Todo Sobre Mi Madre",
-      "director": "Almodobar",
-      "clasificacion": "Drama"
-    },
-    {
-      "id": 4,
-      "nombre": "300",
-      "director": "Zack Snyder",
-      "clasificacion": "Acción"
-    },
-    {
-      "id": 5,
-      "nombre": "El silencio de los corderos",
-      "director": "Jonathan Demme",
-      "clasificacion": "Drama"
-    },
-    {
-      "id": 6,
-      "nombre": "Forrest Gump",
-      "director": "Robert Zemeckis",
-      "clasificacion": "Comedia"
-    },
-    {
-      "id": 7,
-      "nombre": "Las Hurdes",
-      "director": "Luis Buñuel",
-      "clasificacion": "Documental"
-    }
-  ],
-  "clasificaciones": [
-    {
-      "nombre": "Drama",
-      "id": 1
-    },
-    {
-      "nombre": "Comedia",
-      "id": 2
-    },
-    {
-      "nombre": "Documental",
-      "id": 3
-    },
-    {
-      "nombre": "Acción",
-      "id": 4
-    }
-  ]
+    "permission": [
+        {
+            "id": 1,
+            "description": "Cerrar sesion",
+            "resources": {
+                "path": "exit"
+            },
+            "status": true
+        },
+        {
+            "id": 2,
+            "description": "Notificaciones",
+            "resources": {
+                "path": "notifications"
+            },
+            "status": true
+        },
+        {
+            "id": 3,
+            "description": "Exportar información",
+            "resources": {
+                "path": "exportData"
+            },
+            "status": true
+        },
+        {
+            "id": 4,
+            "description": "Configuraciones",
+            "resources": {
+                "path": "settings"
+            },
+            "status": true
+        }
+    ],
+    "profile": [
+        {
+            "id": 1,
+            "name": "Padre/Tutor",
+            "imagePath": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Beaker_%28Muppet%29-en.jpg/200px-Beaker_%28Muppet%29-en.jpg",
+            "permissions": [
+                {
+                    "id": 1,
+                    "description": "Cerrar sesion",
+                    "resources": {
+                        "path": "exit"
+                    },
+                    "status": true
+                },
+                {
+                    "id": 4,
+                    "description": "Configuraciones",
+                    "resources": {
+                        "path": "settings"
+                    },
+                    "status": true
+                }
+            ],
+            "status": true
+        },
+        {
+            "id": 2,
+            "name": "Orientador",
+            "imagePath": "https://vejasp.abril.com.br/wp-content/uploads/2016/12/os-muppets-07.jpeg",
+            "permissions": [
+                {
+                    "id": 1,
+                    "description": "Cerrar sesion",
+                    "resources": {
+                        "path": "exit"
+                    },
+                    "status": true
+                },
+                {
+                    "id": 4,
+                    "description": "Configuraciones",
+                    "resources": {
+                        "path": "settings"
+                    },
+                    "status": true
+                }
+            ],
+            "status": true
+        },
+        {
+            "id": 3,
+            "name": "Profesor",
+            "imagePath": "https://media.vogue.mx/photos/5c072de532b1caa54ef088c0/master/pass/the_muppets_440579711.jpg",
+            "permissions": [
+                {
+                    "id": 1,
+                    "description": "Cerrar sesion",
+                    "resources": {
+                        "path": "exit"
+                    },
+                    "status": true
+                },
+                {
+                    "id": 4,
+                    "description": "Configuraciones",
+                    "resources": {
+                        "path": "settings"
+                    },
+                    "status": true
+                }
+            ],
+            "status": true
+        },
+        {
+            "id": 4,
+            "name": "Director",
+            "imagePath": "https://i.pinimg.com/originals/bd/79/71/bd79714fc41ac181a71f296f2857e246.jpg",
+            "permissions": [
+                {
+                    "id": 1,
+                    "description": "Cerrar sesion",
+                    "resources": {
+                        "path": "exit"
+                    },
+                    "status": true
+                },
+                {
+                    "id": 4,
+                    "description": "Configuraciones",
+                    "resources": {
+                        "path": "settings"
+                    },
+                    "status": true
+                }
+            ],
+            "status": true
+        }
+    ],
+    "user": [
+        {
+            "id": "asb109akksnc12304",
+            "profileId": 1,
+            "name": "Javier",
+            "lastname": "Pérez",
+            "secondLastname": "Ramírez",
+            "phoneNumber": "5544332211",
+            "address": {
+                "id": 1,
+                "street": "Orquídeas",
+                "cp": "59781",
+                "extNumber": "10",
+                "locality": "Los arduinos",
+                "intNumber": ""
+            },
+            "status": true
+        },
+        {
+            "id": "asb109akksnc12303",
+            "profileId": 1,
+            "name": "Pedro",
+            "lastname": "Fernández",
+            "secondLastname": "Otomano",
+            "phoneNumber": "5544332213",
+            "address": {
+                "id": 2,
+                "street": "Tulipanes",
+                "cp": "59789",
+                "extNumber": "101",
+                "locality": "Franciscanos",
+                "intNumber": ""
+            },
+            "status": true
+        },
+        {
+            "id": "asb109akksnc12305",
+            "profileId": 1,
+            "name": "Andrés",
+            "lastname": "Sánchez",
+            "secondLastname": "Bedolla",
+            "phoneNumber": "5544332289",
+            "address": {
+                "id": 3,
+                "street": "Javier Mina",
+                "cp": "59787",
+                "extNumber": "98",
+                "locality": "Independencia",
+                "intNumber": ""
+            },
+            "status": true
+        }
+    ]
 }
